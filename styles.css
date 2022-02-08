@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+html, body {
+  background-color: hsl(217, 54%, 11%);
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.container {
+  width: 340px;
+  max-width: 1440px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card {
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 15px;
+  width: 340px;
+  height: 590px;
+}
+
+.image-container {
+  max-width: 340px;
+  padding: 20px;
+  position: relative;
+}
+
+.hover-bg {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.hover-bg:hover, 
+.hover-bg:active {
+  background: url(./images/icon-view.svg), linear-gradient(rgba(0, 255, 247, 0.5), rgba(0, 255, 247, 0.5));
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.image {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.text {
+  font-family: 'Outfit', sans-serif;
+  padding: 0 20px 20px 20px;
+}
+
+.text h2 {
+  color: hsl(0, 0%, 100%);
+}
+
+.text h2:hover,
+.text h2:active,
+.creator span:hover,
+.creator span:active {
+  color: hsl(178, 100%, 50%);
+}
+
+.description {
+  color: hsl(215, 51%, 70%);
+  font-size: 18px;
+  font-weight: 300;
+  padding: 22px 0 5px;
+}
+
+.text-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.price {
+  color: hsl(178, 100%, 50%);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  width: 95px;
+}
+
+
+.days-pub {
+  color: hsl(215, 51%, 70%);
+  display: flex;
+  align-items: center;
+  width: 95px;
+}
+
+.icon {
+  margin-right: 5px;
+}
+
+.creator {
+  border-top: 1px solid hsl(215, 32%, 27%);
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.creator span {
+  color: hsl(0, 0%, 100%);
+}
+
+.avatar {
+  display: inline-block;
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+  width: 33px;
+  margin-right: 10px;
+}
+
+.avatar, p {
+  margin: 17px 8px 0 0;
+}
